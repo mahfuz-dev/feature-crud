@@ -190,6 +190,4 @@ client.connect((err) => {
   console.log("connected to mongo instance..");
 });
 
-app.listen(port, () => {
-  console.log(`server is ready on port ${port} `);
-});
+app.listen(process.env.PORT || port );
